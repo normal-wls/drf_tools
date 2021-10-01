@@ -21,7 +21,7 @@ from drf_yasg.views import get_schema_view
 from rest_framework.routers import DefaultRouter
 
 from book_api_swagger.viewsets import BookViewSet
-from demos.viewsets import ReadWriteFieldViewSet
+from read_write_serializer_demo.viewsets import ReadWriteFieldViewSet
 
 router = DefaultRouter()
 router.register(r"read_write_field", ReadWriteFieldViewSet)

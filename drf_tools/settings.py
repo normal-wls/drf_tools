@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'drf_yasg',
-    'demos',
+    'read_write_serializer_demo',
     'book_api_swagger',
 ]
 

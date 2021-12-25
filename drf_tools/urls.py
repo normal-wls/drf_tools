@@ -22,6 +22,7 @@ from rest_framework.routers import DefaultRouter
 
 from book_api_swagger.viewsets import BookViewSet
 from read_write_serializer_demo.viewsets import ReadWriteFieldViewSet
+from tools.schemas.demo_api import get_demo_api, post_demo_api
 
 router = DefaultRouter()
 router.register(r"read_write_field", ReadWriteFieldViewSet)
@@ -29,6 +30,8 @@ router.register(r"book_api_swagger", BookViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    url(r"^get_demo_api/", get_demo_api),
+    url(r"^post_demo_api/", post_demo_api),
     url(r'^', include(router.urls)),
 ]
 
